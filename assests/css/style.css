@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan';
+}
+:root{
+    --background-color: #c9c9cf;
+    --main-color: #212121;
+    --green-color: #01c847;
+    --gray-color: #7f7f7f;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+.converter{
+    background-color: var(--main-color);
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    background-color: var(--green-color);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border-bottom: solid 3px rgba(194, 232, 179, 0.642);
+}
+.icon:active{
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(2px); 
+}
+.form-control {
+    background-color: #f8f9fa;
+}
+.form-select:focus,
+.form-control:focus{
+    border-color: var(--green-color);
+    box-shadow: 0 0 0 .25rem #5fe38e60;
+}
+
